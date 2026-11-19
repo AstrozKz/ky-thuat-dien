@@ -1196,59 +1196,6 @@ html.exOpen,html.exOpen body{overflow:hidden}
 </div>
 <aside class="notes"><p>Định luật Kiếc-khốp 2 áp dụng cho một vòng kín. Ta chọn một chiều đi vòng, rồi cộng các sức điện động – cùng chiều đi vòng mang dấu cộng, ngược chiều mang dấu trừ – và cho bằng tổng các điện áp rơi I nhân R với quy tắc dấu tương tự. Trong ví dụ, E1 cùng chiều, E2 ngược chiều nên E1 trừ E2 bằng I nhân tổng điện trở.</p></aside>
 </section>
-<section class="slide" data-ch="1" data-title="Phương pháp dòng nhánh – các bước"><div class="author">Tác giả: Huỳnh Hào Kiệt - Trường Trung cấp nghề Diên Khánh</div><div class="chtag">Chương 1 <i class="md">·</i> Mạch điện một chiều</div>
-<h2><span class="num">3.2</span><span class="ht">Giải mạch bằng định luật Kiếc-khốp (dòng nhánh)</span></h2>
-<div class="g2n" style="grid-template-columns:1fr 1fr">
-<ol class="steps">
-<li class="f">Đặt ẩn là <b>dòng điện các nhánh</b> và chọn chiều tùy ý. Mạch có <b>m nhánh</b> → <b>m ẩn</b>.</li>
-<li class="f">Viết <b>(n − 1)</b> phương trình <b>Kiếc-khốp 1</b> cho các nút (n: số nút).</li>
-<li class="f">Chọn chiều đi vòng, viết <b>m − (n − 1)</b> phương trình <b>Kiếc-khốp 2</b> cho các vòng độc lập.</li>
-<li class="f">Giải hệ phương trình → dòng điện các nhánh. Kết quả <b class="hr">âm</b> → chiều thực <b>ngược</b> chiều đã chọn.</li>
-<li class="f">Kiểm tra lại bằng <b>cân bằng công suất</b>: ΣP<sub>nguồn</sub> = ΣP<sub>tải</sub>.</li>
-</ol>
-<div class="col">
-<svg viewBox="0 0 700 430" width="700" class="svgbox">
-<path d="M100 60H600M100 370H600M100 60V370M350 60V370M600 60V370" class="w"/>
-<use href="#sR" x="100" y="150" transform="rotate(90 100 150)" class="sym"/><use href="#sE" x="100" y="275" transform="rotate(-90 100 275)" class="sym"/>
-<use href="#sR" x="350" y="215" transform="rotate(90 350 215)" class="sym"/>
-<use href="#sR" x="600" y="150" transform="rotate(90 600 150)" class="sym"/><use href="#sE" x="600" y="275" transform="rotate(-90 600 275)" class="sym"/>
-<use href="#sDot" x="350" y="60" class="sym"/><use href="#sDot" x="350" y="370" class="sym"/>
-<path d="M60 230V190" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/><path d="M640 230V190" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/><path d="M390 100V140" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/>
-<g class="lbl-it"><text x="140" y="158">R₁</text><text x="140" y="283">E₁</text><text x="390" y="230">R₃</text><text x="640" y="158">R₂</text><text x="640" y="283">E₂</text>
-<text x="20" y="218" style="fill:var(--acc)">I₁</text><text x="652" y="218" style="fill:var(--acc)">I₂</text><text x="405" y="128" style="fill:var(--acc)">I₃</text><text x="340" y="42" text-anchor="end">A</text></g>
-<path d="M200 240a40 40 0 1 1 20 34" fill="none" stroke="var(--mag)" stroke-width="3" marker-end="url(#arV)"/><text x="225" y="250" class="lbl" style="fill:var(--mag)">I</text>
-<path d="M500 240a40 40 0 1 0 -20 34" fill="none" stroke="var(--mag)" stroke-width="3" marker-end="url(#arV)"/><text x="465" y="250" class="lbl" style="fill:var(--mag)">II</text>
-</svg>
-<div class="card f c" style="padding:12px"><p class="sm">Mạch này: m = 3 nhánh, n = 2 nút → <b>1</b> phương trình nút + <b>2</b> phương trình vòng.</p></div>
-</div>
-</div>
-</section>
-<section class="slide" data-ch="1" data-title="Ví dụ giải mạch 2 nguồn"><div class="author">Tác giả: Huỳnh Hào Kiệt - Trường Trung cấp nghề Diên Khánh</div><div class="chtag">Chương 1 <i class="md">·</i> Mạch điện một chiều</div>
-<h2><span class="num">VD</span><span class="ht">Ví dụ: Giải mạch điện có 2 nguồn</span></h2>
-<div class="g2n" style="grid-template-columns:.9fr 1.1fr">
-<div class="col">
-<svg viewBox="0 0 700 430" width="640" class="svgbox">
-<path d="M100 60H600M100 370H600M100 60V370M350 60V370M600 60V370" class="w"/>
-<use href="#sR" x="100" y="150" transform="rotate(90 100 150)" class="sym"/><use href="#sE" x="100" y="275" transform="rotate(-90 100 275)" class="sym"/>
-<use href="#sR" x="350" y="215" transform="rotate(90 350 215)" class="sym"/>
-<use href="#sR" x="600" y="150" transform="rotate(90 600 150)" class="sym"/><use href="#sE" x="600" y="275" transform="rotate(-90 600 275)" class="sym"/>
-<use href="#sDot" x="350" y="60" class="sym"/><use href="#sDot" x="350" y="370" class="sym"/>
-<path d="M60 230V190" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/><path d="M640 230V190" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/><path d="M390 100V140" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/>
-<g class="lbl-it" style="font-size:22px"><text x="135" y="158">R₁=2Ω</text><text x="135" y="283">E₁=14V</text><text x="385" y="230">R₃=2Ω</text><text x="470" y="158">R₂=4Ω</text><text x="470" y="283">E₂=12V</text>
-<text x="20" y="218" style="fill:var(--acc)">I₁</text><text x="652" y="218" style="fill:var(--acc)">I₂</text><text x="405" y="128" style="fill:var(--acc)">I₃</text><text x="340" y="42" text-anchor="end">A</text></g>
-</svg>
-<div class="card f" style="padding:12px 18px"><p class="sm"><b class="hg">Kiểm tra công suất:</b><br>P<sub>nguồn</sub> = 14 × 3 + 12 × 1 = <b>54 W</b><br>P<sub>tải</sub> = 3² × 2 + 1² × 4 + 4² × 2 = 18 + 4 + 32 = <b>54 W</b> ✔</p></div>
-</div>
-<ol class="steps sm">
-<li class="f">Chọn chiều I₁, I₂ đi lên, I₃ đi xuống (như hình). Nút A: <span class="fx">I₁ + I₂ = I₃</span> (1)</li>
-<li class="f">Vòng I (E₁, R₁, R₃): <span class="fx">E₁ = I₁R₁ + I₃R₃</span> ⇒ <span class="fx">14 = 2I₁ + 2I₃</span> (2)</li>
-<li class="f">Vòng II (E₂, R₂, R₃): <span class="fx">E₂ = I₂R₂ + I₃R₃</span> ⇒ <span class="fx">12 = 4I₂ + 2I₃</span> (3)</li>
-<li class="f">Thế (1) vào (2), (3): <span class="fx">4I₁ + 2I₂ = 14</span> và <span class="fx">2I₁ + 6I₂ = 12</span></li>
-<li class="f">Giải hệ: <b class="hm fx">I₁ = 3 A; I₂ = 1 A</b> ⇒ <b class="hm fx">I₃ = I₁ + I₂ = 4 A</b>. Các dòng đều dương → chiều đã chọn đúng.</li>
-</ol>
-</div>
-<aside class="notes"><p>Ta làm từng bước: đầu tiên vẽ chiều dòng điện các nhánh. Viết phương trình nút A. Sau đó viết phương trình cho vòng bên trái và vòng bên phải.</p><p>Cuối cùng giải hệ 2 phương trình 2 ẩn – các em đã học ở lớp 9. Đừng quên kiểm tra bằng cân bằng công suất: tổng công suất nguồn phát ra phải bằng tổng công suất các điện trở tiêu thụ.</p></aside>
-</section>
 <section class="slide" data-ch="1" data-title="4.1 Công của dòng điện – Định luật Jun-Lenxơ"><div class="author">Tác giả: Huỳnh Hào Kiệt - Trường Trung cấp nghề Diên Khánh</div><div class="chtag">Chương 1 <i class="md">·</i> Mạch điện một chiều</div>
 <h2><span class="num">4.1</span><span class="ht">Công của dòng điện – Định luật Jun-Lenxơ</span></h2>
 <div class="g2">
@@ -1314,6 +1261,59 @@ html.exOpen,html.exOpen body{overflow:hidden}
 </ol>
 </div>
 </div>
+</section>
+<section class="slide" data-ch="1" data-title="Phương pháp dòng nhánh – các bước"><div class="author">Tác giả: Huỳnh Hào Kiệt - Trường Trung cấp nghề Diên Khánh</div><div class="chtag">Chương 1 <i class="md">·</i> Mạch điện một chiều</div>
+<h2><span class="num">PP</span><span class="ht">Giải mạch bằng định luật Kiếc-khốp (dòng nhánh)</span></h2>
+<div class="g2n" style="grid-template-columns:1fr 1fr">
+<ol class="steps">
+<li class="f">Đặt ẩn là <b>dòng điện các nhánh</b> và chọn chiều tùy ý. Mạch có <b>m nhánh</b> → <b>m ẩn</b>.</li>
+<li class="f">Viết <b>(n − 1)</b> phương trình <b>Kiếc-khốp 1</b> cho các nút (n: số nút).</li>
+<li class="f">Chọn chiều đi vòng, viết <b>m − (n − 1)</b> phương trình <b>Kiếc-khốp 2</b> cho các vòng độc lập.</li>
+<li class="f">Giải hệ phương trình → dòng điện các nhánh. Kết quả <b class="hr">âm</b> → chiều thực <b>ngược</b> chiều đã chọn.</li>
+<li class="f">Kiểm tra lại bằng <b>cân bằng công suất</b>: ΣP<sub>nguồn</sub> = ΣP<sub>tải</sub> (nguồn: <span class="fx">P = E<i class="md">·</i>I</span>; điện trở: <span class="fx">P = I²R</span>).</li>
+</ol>
+<div class="col">
+<svg viewBox="0 0 700 430" width="700" class="svgbox">
+<path d="M100 60H600M100 370H600M100 60V370M350 60V370M600 60V370" class="w"/>
+<use href="#sR" x="100" y="150" transform="rotate(90 100 150)" class="sym"/><use href="#sE" x="100" y="275" transform="rotate(-90 100 275)" class="sym"/>
+<use href="#sR" x="350" y="215" transform="rotate(90 350 215)" class="sym"/>
+<use href="#sR" x="600" y="150" transform="rotate(90 600 150)" class="sym"/><use href="#sE" x="600" y="275" transform="rotate(-90 600 275)" class="sym"/>
+<use href="#sDot" x="350" y="60" class="sym"/><use href="#sDot" x="350" y="370" class="sym"/>
+<path d="M60 230V190" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/><path d="M640 230V190" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/><path d="M390 100V140" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/>
+<g class="lbl-it"><text x="140" y="158">R₁</text><text x="140" y="283">E₁</text><text x="390" y="230">R₃</text><text x="640" y="158">R₂</text><text x="640" y="283">E₂</text>
+<text x="20" y="218" style="fill:var(--acc)">I₁</text><text x="652" y="218" style="fill:var(--acc)">I₂</text><text x="405" y="128" style="fill:var(--acc)">I₃</text><text x="340" y="42" text-anchor="end">A</text></g>
+<path d="M200 240a40 40 0 1 1 20 34" fill="none" stroke="var(--mag)" stroke-width="3" marker-end="url(#arV)"/><text x="225" y="250" class="lbl" style="fill:var(--mag)">I</text>
+<path d="M500 240a40 40 0 1 0 -20 34" fill="none" stroke="var(--mag)" stroke-width="3" marker-end="url(#arV)"/><text x="465" y="250" class="lbl" style="fill:var(--mag)">II</text>
+</svg>
+<div class="card f c" style="padding:12px"><p class="sm">Mạch này: m = 3 nhánh, n = 2 nút → <b>1</b> phương trình nút + <b>2</b> phương trình vòng.</p></div>
+</div>
+</div>
+</section>
+<section class="slide" data-ch="1" data-title="Ví dụ giải mạch 2 nguồn"><div class="author">Tác giả: Huỳnh Hào Kiệt - Trường Trung cấp nghề Diên Khánh</div><div class="chtag">Chương 1 <i class="md">·</i> Mạch điện một chiều</div>
+<h2><span class="num">VD</span><span class="ht">Ví dụ: Giải mạch điện có 2 nguồn</span></h2>
+<div class="g2n" style="grid-template-columns:.9fr 1.1fr">
+<div class="col">
+<svg viewBox="0 0 700 430" width="640" class="svgbox">
+<path d="M100 60H600M100 370H600M100 60V370M350 60V370M600 60V370" class="w"/>
+<use href="#sR" x="100" y="150" transform="rotate(90 100 150)" class="sym"/><use href="#sE" x="100" y="275" transform="rotate(-90 100 275)" class="sym"/>
+<use href="#sR" x="350" y="215" transform="rotate(90 350 215)" class="sym"/>
+<use href="#sR" x="600" y="150" transform="rotate(90 600 150)" class="sym"/><use href="#sE" x="600" y="275" transform="rotate(-90 600 275)" class="sym"/>
+<use href="#sDot" x="350" y="60" class="sym"/><use href="#sDot" x="350" y="370" class="sym"/>
+<path d="M60 230V190" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/><path d="M640 230V190" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/><path d="M390 100V140" stroke="var(--acc)" stroke-width="4" marker-end="url(#ar)"/>
+<g class="lbl-it" style="font-size:22px"><text x="135" y="158">R₁=2Ω</text><text x="135" y="283">E₁=14V</text><text x="385" y="230">R₃=2Ω</text><text x="470" y="158">R₂=4Ω</text><text x="470" y="283">E₂=12V</text>
+<text x="20" y="218" style="fill:var(--acc)">I₁</text><text x="652" y="218" style="fill:var(--acc)">I₂</text><text x="405" y="128" style="fill:var(--acc)">I₃</text><text x="340" y="42" text-anchor="end">A</text></g>
+</svg>
+</div>
+<ol class="steps sm">
+<li class="f">Chọn chiều I₁, I₂ đi lên, I₃ đi xuống (như hình). Nút A: <span class="fx">I₁ + I₂ = I₃</span> (1)</li>
+<li class="f">Vòng I (E₁, R₁, R₃): <span class="fx">E₁ = I₁R₁ + I₃R₃</span> ⇒ <span class="fx">14 = 2I₁ + 2I₃</span> (2)</li>
+<li class="f">Vòng II (E₂, R₂, R₃): <span class="fx">E₂ = I₂R₂ + I₃R₃</span> ⇒ <span class="fx">12 = 4I₂ + 2I₃</span> (3)</li>
+<li class="f">Thế (1) vào (2), (3): <span class="fx">4I₁ + 2I₂ = 14</span> và <span class="fx">2I₁ + 6I₂ = 12</span></li>
+<li class="f">Giải hệ: <b class="hm fx">I₁ = 3 A; I₂ = 1 A</b> ⇒ <b class="hm fx">I₃ = I₁ + I₂ = 4 A</b>. Các dòng đều dương → chiều đã chọn đúng.</li>
+<li class="f" style="border-color:var(--ok)"><b class="hg">Kiểm tra cân bằng công suất:</b><br><span class="fx">P<sub>nguồn</sub> = E₁I₁ + E₂I₂ = 14 × 3 + 12 × 1 = <b>54 W</b></span><br><span class="fx">P<sub>tải</sub> = I₁²R₁ + I₂²R₂ + I₃²R₃ = 18 + 4 + 32 = <b>54 W</b></span> ⇒ cân bằng ✔ kết quả đúng.</li>
+</ol>
+</div>
+<aside class="notes"><p>Ta làm từng bước: đầu tiên vẽ chiều dòng điện các nhánh. Viết phương trình nút A. Sau đó viết phương trình cho vòng bên trái và vòng bên phải.</p><p>Tiếp theo giải hệ 2 phương trình 2 ẩn – các em đã học ở lớp 9. Bước cuối cùng là kiểm tra bằng cân bằng công suất, dùng công thức vừa học ở bài Công suất: công suất nguồn bằng E nhân I, công suất điện trở bằng I bình phương nhân R. Tổng công suất các nguồn phát ra phải bằng tổng công suất các điện trở tiêu thụ thì kết quả mới đúng.</p></aside>
 </section>
 <section class="slide" data-ch="1" data-title="5. Mắc nối tiếp"><div class="author">Tác giả: Huỳnh Hào Kiệt - Trường Trung cấp nghề Diên Khánh</div><div class="chtag">Chương 1 <i class="md">·</i> Mạch điện một chiều</div>
 <h2><span class="num">5.1</span><span class="ht">Biến đổi tương đương: điện trở mắc nối tiếp</span></h2>
